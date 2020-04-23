@@ -1,1 +1,1 @@
-# staypawsitive
+Design folder is for design purposes only. All the Java coding and real interactivity should be done in the `src` folder.
