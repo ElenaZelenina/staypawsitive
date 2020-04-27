@@ -1,0 +1,131 @@
+form div, .quantity-price div {
+    padding-top: 15px;
+}
+
+.product-order {
+    float: left;
+}
+
+.product-order h3 {
+    margin-top: 0;
+}
+
+.totals {
+    font-weight: bolder;
+}
+
+div.product-order {
+    width: 600px;
+    margin-left: 30px;
+}
+
+div.quantity-price {
+    float: right;
+    width: 200px;
+}
+
+.shipping-cost, .payment {
+    width: 500px;
+    float: left;
+}
+
+table.shipping-cost, 
+div.delivery-option, 
+.address,
+.payment-inner,
+.order-summary table {
+    border-radius: 3px;
+    border: 1px solid #8da9ad;
+    border-bottom: 4px solid #93e5ab;
+    padding: 20px 30px;
+}
+
+.shipping-cost td:nth-child(2),
+.order-summary table td:nth-child(2) {
+    text-align: right;
+}
+
+.shipping-cost td, .order-summary table td {
+    padding: 3px 0;
+}
+
+.delivery-option {
+    float: right;
+    width: 400px;
+}
+
+.order-summary {
+    width: 462px;
+    float: right;
+}
+
+.order-summary table {
+    width: 100%;
+}
+
+.order-summary .totals td {
+    padding-top: 10px;
+    border-top: 1px solid black;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+h2.delivery-option {
+    float: right;
+    width: 462px;
+}
+
+.confirm {
+    text-align: center;
+}
+.confirm button {
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #8da9ad;
+    padding: 9px 14px;
+    font-size: 1.4em;
+    background-color: #93e5ab;
+}
+
+.second {
+    margin-left: 50px;
+}
+
+#fname,
+#lname {
+    width: 350px; 
+}
+
+#adr {
+    width: 795px;
+}
+
+#adr2 {
+    width: 368px;
+}
+
+#city,
+#state,
+#country {
+    width: 220px;
+}
+
+#comments {
+    width: 930px;
+}
+
+#cname {
+    width: 300px;
+}
+
+#ccnum {
+    width: 300px;
+}
+
+#expdate {
+    width: 120px;
+}
+
+#cvv {
+    width: 74px;
+}

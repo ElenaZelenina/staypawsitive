@@ -65,78 +65,9 @@ nav ul li a:hover {
     margin: 15px;
 }
 
-form div, .quantity-price div {
-    padding-top: 15px;
-}
-
-.product-order {
-    float: left;
-}
-
-.product-order h3 {
-    margin-top: 0;
-}
-
-.totals {
-    font-weight: bolder;
-}
-
-div.product-order {
-    width: 600px;
-    margin-left: 30px;
-}
-
-div.quantity-price {
-    float: right;
-    width: 200px;
-}
-
-.shipping-cost {
-    width: 500px;
-    float: left;
-}
-
-table.shipping-cost {
-    border-radius: 3px;
-    border: 1px solid #8da9ad;
-    border-bottom: 4px solid #93e5ab;
-    padding: 20px 30px;
-    margin-top: 20px;
-}
-
-.shipping-cost td:nth-child(2) {
-    text-align: right;
-}
-
-.shipping-cost td {
-    padding: 3px 0;
-}
-
-.delivery-option {
-    float: right;
-    width: 400px;
-}
-
-h2.delivery-option {
-    float: right;
-    width: 462px;
-}
-
 br.clear {
     height: 0px; 
     clear: both;
-}
-
-div.delivery-option {
-    border-radius: 3px;
-    border: 1px solid #8da9ad;
-    border-bottom: 4px solid #93e5ab;
-    padding: 20px 30px;
-    margin-top: 20px;
-}
-
-.shipping-cost {
-    width: 500px;
 }
 
 footer {
