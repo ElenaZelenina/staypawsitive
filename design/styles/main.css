@@ -93,6 +93,7 @@ div.quantity-price {
 
 .shipping-cost {
     width: 500px;
+    float: left;
 }
 
 table.shipping-cost {
@@ -108,12 +109,22 @@ table.shipping-cost {
 }
 
 .shipping-cost td {
-    padding: 10px 0;
+    padding: 3px 0;
 }
 
 .delivery-option {
     float: right;
     width: 400px;
+}
+
+h2.delivery-option {
+    float: right;
+    width: 462px;
+}
+
+br.clear {
+    height: 0px; 
+    clear: both;
 }
 
 div.delivery-option {
