@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="web, website, group project" />
+    <title>Stay Pawsitive: Home Page</title>
+    <link href="styles/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <img id="logo" src="images/logo.png" alt="logo" />
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="donation.html">Donation</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h1>Your Order:</h1>
+                <div class="text-section">
+                    <img src="images/productsml.png" alt="" class="product-order">
+                    <div class="product-order">
+                        <h3>Grain-Free Dog Food</h3>
+                        <p>Flavor: Chicken/Turkey</p>
+                        <p>4 lbs - medium</p>
+                    </div>
+                    <div class="quantity-price">
+                        <div class="quantity">Quantity: <span id="quantity">1</span></div>
+                        <div class="price">Price: <span id="price">$6.40</span></div>
+                        <div class="totals">Total: <span id="totals">$6.40</span></div>
+                    </div>
+                    <br style="height: 0px; clear: both;" />
+                </div>
+                <form action="" method="post">
+                    <div>
+                        <input type="checkbox" id="pickup" name="pickup" value="false">
+                        <label for="pickup">I will pick my order up</label><br>
+                    </div>
+                    <h2 class="shipping-cost">Regular Shipping Cost</h2>
+                    <table class="shipping-cost">
+                        <thead>
+                            <tr>
+                                <th>Order Amount</th>
+                                <th>Shipping Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>$50 or less</td>
+                                <td>$7.95</td>
+                            </tr>
+                            <tr>
+                                <td>Over $50 but not more than $150</td>
+                                <td>$9.95</td>
+                            </tr>
+                            <tr>
+                                <td>Over $150 but not more than $300</td>
+                                <td>$11.95</td>
+                            </tr>
+                            <tr>
+                                <td>Over $300</td>
+                                <td>Free</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 class="delivery-option">Choose a delivery option</h2>
+                    <div class="delivery-option">
+                        <div>
+                            <input type="radio" id="regular" name="delivery" value="regular">
+                            <label for="regular">Regular Shippping (7-10 business days)</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="twoday" name="delivery" value="twoday">
+                            <label for="twoday">Two Day Shipping + $5.00 additional charge</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="oneday" name="delivery" value="oneday">
+                            <label for="oneday">One Day Shipping + $10.00 additional charge</label>
+                        </div>
+                    </div>
+                    <br style="height: 0px; clear: both;" />
+
+                </form>
+            </main>
+        </div>
+        <footer>
+            <p>Copyright 2020, Group 1</p>
+        </footer>
+    </div>
+</body>
+
+</html>

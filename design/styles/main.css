@@ -16,11 +16,12 @@ header img, header nav {
     float: left;
 } 
 
-p {
+.text-section {
     border-radius: 3px;
     border-bottom: 4px solid #93e5ab;
     background-color: #f8fafa;
     padding: 20px 30px;
+    margin-top: 20px;
 }
 
 main img {
@@ -64,6 +65,69 @@ nav ul li a:hover {
     margin: 15px;
 }
 
+form div, .quantity-price div {
+    padding-top: 15px;
+}
+
+.product-order {
+    float: left;
+}
+
+.product-order h3 {
+    margin-top: 0;
+}
+
+.totals {
+    font-weight: bolder;
+}
+
+div.product-order {
+    width: 600px;
+    margin-left: 30px;
+}
+
+div.quantity-price {
+    float: right;
+    width: 200px;
+}
+
+.shipping-cost {
+    width: 500px;
+}
+
+table.shipping-cost {
+    border-radius: 3px;
+    border: 1px solid #8da9ad;
+    border-bottom: 4px solid #93e5ab;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+.shipping-cost td:nth-child(2) {
+    text-align: right;
+}
+
+.shipping-cost td {
+    padding: 10px 0;
+}
+
+.delivery-option {
+    float: right;
+    width: 400px;
+}
+
+div.delivery-option {
+    border-radius: 3px;
+    border: 1px solid #8da9ad;
+    border-bottom: 4px solid #93e5ab;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+.shipping-cost {
+    width: 500px;
+}
+
 footer {
     clear: both;
     position: absolute;
@@ -80,3 +144,4 @@ footer {
 #content-wrap {
     padding-bottom: 95px;
 }
+
