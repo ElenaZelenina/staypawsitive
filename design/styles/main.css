@@ -70,6 +70,23 @@ br.clear {
     clear: both;
 }
 
+.confirm {
+    text-align: center;
+}
+
+.confirm button {
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #8da9ad;
+    padding: 9px 14px;
+    font-size: 1.4em;
+    background-color: #93e5ab;
+}
+
+.stars {
+    float: right;
+}
+
 footer {
     clear: both;
     position: absolute;
