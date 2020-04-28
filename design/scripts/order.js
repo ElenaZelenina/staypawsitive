@@ -19,15 +19,22 @@ function updateOrderTotal() {
     const shippingTypeName = getShippingTypeName();
     const orderTotal = +orderAmount + +tax + +shipping + +additionalShippingCost;
     document.getElementById('orderTax').innerText = tax.toFixed(2);
+    document.getElementById('tax').value = tax;
+    
     document.getElementById('orderShipping').innerText = shipping.toFixed(2);
+    document.getElementById('shipping').value = shipping;
+
     document.getElementById('additionalShippingText').innerText = shippingTypeName;
     document.getElementById('additionalShippingValue').innerText = additionalShippingCost.toFixed(2);
-    document.getElementById('orderTotal').innerText = orderTotal.toFixed(2);
+    document.getElementById('additionalShipping').value = additionalShippingCost;
+    
+    document.getElementById('orderTotalDisplay').innerText = orderTotal.toFixed(2);
+    document.getElementById('orderTotal').value = orderTotal;
 }
 
 
 function getOrderAmount() {
-    return +document.getElementById('orderAmount').innerText;
+    return +document.getElementById('orderAmount').value;
 }
 
 function showHidePickup() {

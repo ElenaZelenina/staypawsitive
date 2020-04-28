@@ -27,6 +27,11 @@
                 </nav>
             </header>
             <main>
+                <form action="order.html" method="POST">
+                    <input type="hidden" name="productId" value="1" />
+                    <input type="hidden" name="orderAmount" id="orderAmount" value="0" />
+                    <input type="hidden" name="productName" value="Grain-Free Dog Food">
+                    <input type="hidden" name="productImage" value="productsml.png">
                 <h1>
                     Grain-Free Dog Food
                     <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
@@ -64,13 +69,14 @@
                             </tr>
                             <tr>
                                 <td><label>Price:</label></td>
-                                <td><span id="productPrice">$6.40</span></td>
+                                <td><span id="productPrice"></span></td>
                             </tr>
                         </tbody>
                     </table>
                     <div class="confirm">
                         <button>BUY NOW</button>
                     </div>
+                    <a href="store.html" class="backlink">Back to Store</a>
                 </div>
 
                 <br class="clear" />
@@ -83,7 +89,8 @@
                     in this dog food is always a high quality protein, their food is grain-free for easy digestion, has
                     a poultry-free recipe, and is made locally with great ingredients. More importantly, we like "X"
                     company dog food because it aids better health for dogs, especially with their coat and skin.</p>
-
+                
+                </form>
             </main>
         </div>
         <footer>

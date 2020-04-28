@@ -42,7 +42,13 @@
                     </div>
                     <br class="clear" />
                 </div>
-                <form action="" method="post">
+                <form action="thankyou.html" method="POST">
+                    <input type="hidden" name="orderTotal" id="orderTotal" value="0" />
+                    <input type="hidden" name="orderAmount" id="orderAmount" value="6.40" />
+                    <input type="hidden" name="tax" id="tax" value="0" />
+                    <input type="hidden" name="shipping" id="shipping" value="0" />
+                    <input type="hidden" name="additionalShipping" id="additionalShipping" value="0" />
+
                     <div>
                         <input type="checkbox" id="pickup" name="pickup" value="false">
                         <label for="pickup">I will pick my order up</label><br>
@@ -221,23 +227,23 @@
                             <tbody>
                                 <tr>
                                     <td>Order Amount:</td>
-                                    <td>$<span id="orderAmount">6.40</span></td>
+                                    <td>$<span>6.40</span></td>
                                 </tr>
                                 <tr>
                                     <td>Tax:</td>
-                                    <td>$<span id="orderTax">0.42</span></td>
+                                    <td>$<span id="orderTax"></span></td>
                                 </tr>
                                 <tr>
                                     <td>Shipping:</td>
-                                    <td>$<span id="orderShipping">7.95</span></td>
+                                    <td>$<span id="orderShipping"></span></td>
                                 </tr>
                                 <tr id="additionalShipping">
-                                    <td><span id="additionalShippingText">Two Days Expedited Shipping</span></td>
-                                    <td>$<span id="additionalShippingValue">5.00</span></td>
+                                    <td><span id="additionalShippingText"></span></td>
+                                    <td>$<span id="additionalShippingValue"></span></td>
                                 </tr>
                                 <tr class="totals">
                                     <td>Order Total:</td>
-                                    <td>$<span id="orderTotal">19.77</span></td>
+                                    <td>$<span id="orderTotalDisplay"></span></td>
                                 </tr>
                             </tbody>
                         </table>

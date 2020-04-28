@@ -57,6 +57,20 @@ nav ul li a:hover {
     background-color: #93e5ab;
 }
 
+.backlink {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: #325258;
+    font-size: x-large;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.backlink:hover {
+    color: #08c03f;
+}
+
 .gallery {
     text-align: center;
 }

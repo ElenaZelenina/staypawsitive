@@ -13,6 +13,7 @@ function updatePrice() {
     const initPrice = 1.6;
     const quantity = document.getElementById('quantity');
     const price = initPrice * +quantity.value * +dropDown.value;
+    document.getElementById('orderAmount').value = price.toFixed(2);
     document.getElementById('productPrice').innerText = '$' + price.toFixed(2);
 }
 
