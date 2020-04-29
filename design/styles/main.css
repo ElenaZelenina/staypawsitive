@@ -8,13 +8,32 @@ body {
   width: 1000px;
 }
 
+header {
+    width: 1000px;
+    top: 0px;
+    transition: transform .2s;
+    position: fixed;
+    margin-top: 0;
+    z-index: 101;
+    background-color: #f8fafa;
+    box-shadow: 0 0 4px 0 #09464d;
+    min-height: 60px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+main {
+    padding-top: 122px;
+}
+
 h1, h2 {
     font-family: Verdana, Geneva, sans-serif;
 }
 
-header img, header nav {
-    float: left;
-} 
+
+p {
+
+}
 
 .text-section {
     border-radius: 3px;
@@ -28,10 +47,18 @@ main img {
     border-radius: 5px;
 }
 
-header {
-    background-color: #f8fafa;
-    box-shadow: 0 0 4px 0 #09464d;
-    height: 100px;
+#logo {
+    display: block;
+}
+
+.nav {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    margin: auto;
+}
+
+nav {
 }
 
 nav ul {
@@ -41,6 +68,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a {
@@ -50,6 +78,7 @@ nav ul li a {
     display: block;
     padding: 20px;
     color: #325258;
+    border-bottom: 3px solid transparent;
 }
 
 nav ul li a:hover {
@@ -62,7 +91,7 @@ nav ul li a:hover {
     display: block;
     padding: 20px;
     color: #325258;
-    font-size: x-large;
+    font-size: large;
     text-align: center;
     margin: 10px 0;
 }
@@ -80,41 +109,63 @@ nav ul li a:hover {
 }
 
 br.clear {
-    height: 0px; 
+    height: 0px;
     clear: both;
 }
 
 .confirm {
     text-align: center;
+    margin-top: 50px;
 }
 
 .confirm button {
     cursor: pointer;
     border-radius: 3px;
-    border: 1px solid #8da9ad;
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px 0 #09464d;
     padding: 9px 14px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     background-color: #93e5ab;
+}
+
+.confirm button:hover {
+    box-shadow: 0 0 0 0 transparent;
 }
 
 .stars {
     float: right;
 }
 
+#faq h3 {
+    margin-bottom: 8px;
+}
+
+#faq p {
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+#faq hr {
+    border-top: 1px solid #65b891;
+}
+
 footer {
     clear: both;
-    position: absolute;
+   /* position: absolute;*/
     bottom: 0;
     text-align: center;
     width: 100%;
+    border-radius: 3px;
+    border-top: 4px solid #93e5ab;
+    background-color: #f8fafa;
+    padding: 10px 0px;
 }
 
 #page-container {
     position: relative;
     min-height: 100vh;
   }
-  
-#content-wrap {
-    padding-bottom: 95px;
-}
 
+#content-wrap {
+    padding-bottom: 50px;
+}

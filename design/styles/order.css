@@ -29,8 +29,8 @@ div.quantity-price {
     float: left;
 }
 
-table.shipping-cost, 
-div.delivery-option, 
+table.shipping-cost,
+div.delivery-option,
 .address,
 .payment-inner,
 .order-summary table {
@@ -65,7 +65,7 @@ div.delivery-option,
 
 .order-summary .totals td {
     padding-top: 10px;
-    border-top: 1px solid #8da9ad;
+    border-top: 1px solid black;
     font-size: 1.3em;
     font-weight: normal;
 }
@@ -81,7 +81,7 @@ h2.delivery-option {
 
 #fname,
 #lname {
-    width: 350px; 
+    width: 350px;
 }
 
 #adr {
