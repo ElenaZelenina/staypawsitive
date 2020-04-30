@@ -118,7 +118,7 @@ br.clear {
     margin-top: 50px;
 }
 
-.confirm button {
+.confirm button, .donation-amount button {
     cursor: pointer;
     border-radius: 3px;
     border: 1px solid transparent;

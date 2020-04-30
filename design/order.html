@@ -42,7 +42,7 @@
                     </div>
                     <br class="clear" />
                 </div>
-                <form action="thankyou.html" method="POST">
+                <form action="thankyouorder.html" method="POST">
                     <input type="hidden" name="orderTotal" id="orderTotal" value="0" />
                     <input type="hidden" name="orderAmount" id="orderAmount" value="6.40" />
                     <input type="hidden" name="tax" id="tax" value="0" />
@@ -207,17 +207,17 @@
                             </div>
                             <div>
                                 <label for="cname">Name on Card:</label>
-                                <input type="text" id="cname" name="cardname">
+                                <input type="text" id="cname" name="cardname" required>
                             </div>
                             <div>
-                                <label for="ccnum">Card Nnumber:</label>
-                                <input type="text" id="ccnum" name="cardnumber">
+                                <label for="ccnum">Card Number:</label>
+                                <input type="text" id="ccnum" name="cardnumber" required>
                             </div>
                             <div>
                                 <label for="expdate">Expiration Date:</label>
-                                <input type="text" id="expdate" name="expdate">
+                                <input type="text" id="expdate" name="expdate" required>
                                 <label for="cvv" class="second">CVV:</label>
-                                <input type="text" id="cvv" name="cvv">
+                                <input type="text" id="cvv" name="cvv" required>
                             </div>
                         </div>
                     </div>
@@ -249,7 +249,7 @@
                         </table>
 
                         <div class="confirm">
-                            <button>Confirm Order</button>
+                            <button>CONFIRM ORDER</button>
                         </div>
                     </div>
                     <br class="clear" />

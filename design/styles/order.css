@@ -1,3 +1,5 @@
+/* used for order.html and donation.html */
+
 form div, .quantity-price div {
     padding-top: 15px;
 }
@@ -59,6 +61,12 @@ div.delivery-option,
     float: right;
 }
 
+.confirm-donation {
+    width: 400px;
+    float: right;
+    margin-top: 90px;
+}
+
 .order-summary table {
     width: 100%;
 }
@@ -68,6 +76,21 @@ div.delivery-option,
     border-top: 1px solid black;
     font-size: 1.3em;
     font-weight: normal;
+}
+
+.donation-amount span, .donation-amount input {
+    padding: 10px 20px;
+    background-color: #f8fafa;
+    border-radius: 5px;
+    border: 1px solid #93e5ab;
+    color: #325258;
+    font-size: 1.5em;
+    padding: 20px 40px;
+    margin: 0 15px;
+}
+
+.donation-amount span.active {
+    background-color: #93e5ab;
 }
 
 h2.delivery-option {
@@ -107,7 +130,7 @@ h2.delivery-option {
 }
 
 #ccnum {
-    width: 300px;
+    width: 306px;
 }
 
 #expdate {
@@ -116,4 +139,16 @@ h2.delivery-option {
 
 #cvv {
     width: 74px;
+}
+
+#dname, #email {
+    width: 330px;
+}
+
+#inMemory {
+    width: 500px;
+}
+
+#donationCustom {
+    width: 200px;
 }
