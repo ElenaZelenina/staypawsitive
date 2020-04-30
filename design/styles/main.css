@@ -8,32 +8,13 @@ body {
   width: 1000px;
 }
 
-header {
-    width: 1000px;
-    top: 0px;
-    transition: transform .2s;
-    position: fixed;
-    margin-top: 0;
-    z-index: 101;
-    background-color: #f8fafa;
-    box-shadow: 0 0 4px 0 #09464d;
-    min-height: 60px;
-    box-sizing: border-box;
-    display: flex;
-}
-
-main {
-    padding-top: 122px;
-}
-
 h1, h2 {
     font-family: Verdana, Geneva, sans-serif;
 }
 
-
-p {
-
-}
+header img, header nav {
+    float: left;
+} 
 
 .text-section {
     border-radius: 3px;
@@ -47,18 +28,10 @@ main img {
     border-radius: 5px;
 }
 
-#logo {
-    display: block;
-}
-
-.nav {
-    position: relative;
-    z-index: 2;
-    width: 70%;
-    margin: auto;
-}
-
-nav {
+header {
+    background-color: #f8fafa;
+    box-shadow: 0 0 4px 0 #09464d;
+    height: 100px;
 }
 
 nav ul {
@@ -78,7 +51,6 @@ nav ul li a {
     display: block;
     padding: 20px;
     color: #325258;
-    border-bottom: 3px solid transparent;
 }
 
 nav ul li a:hover {
@@ -91,7 +63,7 @@ nav ul li a:hover {
     display: block;
     padding: 20px;
     color: #325258;
-    font-size: large;
+    font-size: x-large;
     text-align: center;
     margin: 10px 0;
 }
@@ -109,7 +81,7 @@ nav ul li a:hover {
 }
 
 br.clear {
-    height: 0px;
+    height: 0px; 
     clear: both;
 }
 
@@ -124,7 +96,7 @@ br.clear {
     border: 1px solid transparent;
     box-shadow: 0 0 3px 0 #09464d;
     padding: 9px 14px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     background-color: #93e5ab;
 }
 
@@ -134,6 +106,23 @@ br.clear {
 
 .stars {
     float: right;
+}
+
+footer {
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+#content-wrap {
+    padding-bottom: 95px;
 }
 
 #faq h3 {
@@ -147,25 +136,4 @@ br.clear {
 
 #faq hr {
     border-top: 1px solid #65b891;
-}
-
-footer {
-    clear: both;
-   /* position: absolute;*/
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    border-radius: 3px;
-    border-top: 4px solid #93e5ab;
-    background-color: #f8fafa;
-    padding: 10px 0px;
-}
-
-#page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-
-#content-wrap {
-    padding-bottom: 50px;
 }
