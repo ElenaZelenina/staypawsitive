@@ -83,7 +83,7 @@ div.delivery-option,
 
 .order-summary .totals td {
     padding-top: 10px;
-    border-top: 1px solid black;
+    border-top: 1px solid #8da9ad;
     font-size: 1.3em;
     font-weight: normal;
 }
