@@ -1,4 +1,4 @@
-/* used for order.html and donation.html */
+/* used for order.html, donation.html and shipping.html  */
 
 form div, .quantity-price div {
     padding-top: 15px;
@@ -32,6 +32,7 @@ div.quantity-price {
 }
 
 table.shipping-cost,
+.shipping-price,
 div.delivery-option,
 .address,
 .payment-inner,
@@ -43,11 +44,12 @@ div.delivery-option,
 }
 
 .shipping-cost td:nth-child(2),
+.shipping-price td:nth-child(2),
 .order-summary table td:nth-child(2) {
     text-align: right;
 }
 
-.shipping-cost td, .order-summary table td {
+.shipping-cost td, .order-summary table td, .shipping-price td {
     padding: 3px 0;
 }
 
@@ -69,6 +71,14 @@ div.delivery-option,
 
 .order-summary table {
     width: 100%;
+}
+
+.shipping-price {
+    width: 70%;
+}
+
+.shipping-options li{
+    padding: 5px;
 }
 
 .order-summary .totals td {
