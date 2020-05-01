@@ -42,7 +42,8 @@
                     </div>
                     <br class="clear" />
                 </div>
-                <form action="thankyouorder.html" method="POST">
+                <form action="ShippingServer.jsp" method="POST">
+                    <input type="hidden" name="productId" id="productId" value="1">
                     <input type="hidden" name="orderTotal" id="orderTotal" value="0" />
                     <input type="hidden" name="orderAmount" id="orderAmount" value="6.40" />
                     <input type="hidden" name="tax" id="tax" value="0" />
@@ -110,7 +111,7 @@
                                     <label for="fname">First Name:</label>
                                     <input type="text" id="fname" name="customerFirstName">
                                     <label for="lname" class="second">Last Name:</label>
-                                    <input type="text" id="lname" name="customerFirstName">
+                                    <input type="text" id="lname" name="customerLastName">
                                 </div>
                                 <div>
                                     <label for="adr">Address First Line:</label>
