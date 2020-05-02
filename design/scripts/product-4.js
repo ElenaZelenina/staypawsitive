@@ -17,6 +17,7 @@ function updatePrice() {
     const price = +quantity.value * prices[dropDown.value];
     document.getElementById('orderAmount').value = price.toFixed(2);
     document.getElementById('productPrice').innerText = '$' + price.toFixed(2);
+    document.getElementById('price').value = price;
 }
 
 window.onload = init;
