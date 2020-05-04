@@ -1,0 +1,164 @@
+/* used for order.html, store.html, donation.html and shipping.html  */
+
+form div, .quantity-price div {
+    padding-top: 15px;
+}
+
+.product-order {
+    float: left;
+}
+
+.product-order h3 {
+    margin-top: 0;
+}
+
+.totals {
+    font-weight: bolder;
+}
+
+div.product-order {
+    width: 600px;
+    margin-left: 30px;
+}
+
+div.quantity-price {
+    float: right;
+    width: 200px;
+}
+
+.shipping-cost, .payment {
+    width: 500px;
+    float: left;
+}
+
+table.shipping-cost,
+.shipping-price,
+div.delivery-option,
+.address,
+.payment-inner,
+.order-summary table {
+    border-radius: 3px;
+    border: 1px solid #8da9ad;
+    border-bottom: 4px solid #93e5ab;
+    padding: 20px 30px;
+}
+
+.shipping-cost td:nth-child(2),
+.shipping-price td:nth-child(2),
+.order-summary table td:nth-child(2) {
+    text-align: right;
+}
+
+.shipping-cost td, .order-summary table td, .shipping-price td {
+    padding: 3px 0;
+}
+
+.delivery-option {
+    float: right;
+    width: 400px;
+}
+
+.order-summary {
+    width: 462px;
+    float: right;
+}
+
+.confirm-donation {
+    width: 400px;
+    float: right;
+    margin-top: 90px;
+}
+
+.order-summary table {
+    width: 100%;
+}
+
+.shipping-price {
+    width: 70%;
+}
+
+.shipping-options li{
+    padding: 5px;
+}
+
+.order-summary .totals td {
+    padding-top: 10px;
+    border-top: 1px solid #8da9ad;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+.donation-amount span, .donation-amount input {
+    padding: 10px 20px;
+    background-color: #f8fafa;
+    border-radius: 5px;
+    border: 1px solid #93e5ab;
+    color: #325258;
+    font-size: 1.5em;
+    padding: 20px 40px;
+    margin: 0 15px;
+}
+
+.donation-amount span.active {
+    background-color: #93e5ab;
+}
+
+h2.delivery-option {
+    float: right;
+    width: 462px;
+}
+
+.second {
+    margin-left: 50px;
+}
+
+#fname,
+#lname {
+    width: 350px;
+}
+
+#adr {
+    width: 795px;
+}
+
+#adr2 {
+    width: 353px;
+}
+
+#city,
+#state,
+#country {
+    width: 220px;
+}
+
+#comments {
+    width: 930px;
+}
+
+#cname {
+    width: 300px;
+}
+
+#ccnum {
+    width: 306px;
+}
+
+#expdate {
+    width: 120px;
+}
+
+#cvv {
+    width: 74px;
+}
+
+#dname, #email {
+    width: 330px;
+}
+
+#inMemory {
+    width: 500px;
+}
+
+#donationCustom {
+    width: 200px;
+}
