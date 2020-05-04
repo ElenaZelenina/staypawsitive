@@ -17,12 +17,12 @@ function init() {
         donation10, donation25, donation50, donation100, donationCustom
     ];
 
-    donation10.addEventListener('click', () => setDonation(donation10, 10));
-    donation25.addEventListener('click', () => setDonation(donation25, 25));
-    donation50.addEventListener('click', () => setDonation(donation50, 50));
-    donation100.addEventListener('click', () => setDonation(donation100, 100));
-    donationCustom.addEventListener('click', () => setDonation(donationCustom, +donationCustom.value));
-    donationCustom.addEventListener('change', () => setDonationAmount(donationCustom.value));
+    donation10.addEventListener('click', function () { setDonation(donation10, 10); });
+    donation25.addEventListener('click', function () { setDonation(donation25, 25); });
+    donation50.addEventListener('click', function () { setDonation(donation50, 50) });
+    donation100.addEventListener('click', function () { setDonation(donation100, 100); });
+    donationCustom.addEventListener('click', function () { setDonation(donationCustom, +donationCustom.value); });
+    donationCustom.addEventListener('change', function () { setDonationAmount(donationCustom.value); });
 }
 
 function setDonation(activeButton, amount) {
