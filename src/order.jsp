@@ -41,6 +41,7 @@
                 </div>
                 <form action="ShippingServer.jsp" method="POST">
                     <input type="hidden" name="productId" id="productId" value="<%= session.getAttribute("productId")%>">
+                    <input type="hidden" name="productName" id="productName" value="<%= session.getAttribute("productName")%>">
                     <input type="hidden" name="quantity" id="quantity" value="<%= session.getAttribute("quantity")%>">
                     <input type="hidden" name="orderTotal" id="orderTotal" value="0" />
                     <input type="hidden" name="orderAmount" id="orderAmount" value="<%= session.getAttribute("price")%>" />
@@ -100,93 +101,92 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <br class="clear" />
-                        <div id="shippingInformation">
-                            <h2>Shipping information:</h2>
-                            <div class="address">
-                                <div>
-                                    <label for="fname">First Name:</label>
-                                    <input type="text" id="fname" name="customerFirstName">
-                                    <label for="lname" class="second">Last Name:</label>
-                                    <input type="text" id="lname" name="customerLastName">
-                                </div>
-                                <div>
-                                    <label for="adr">Address First Line:</label>
-                                    <input type="text" id="adr" name="customerAddress">
-                                </div>
-                                <div>
-                                    <label for="adr2">Address Second Line:</label>
-                                    <input type="text" id="adr2" name="customerAddress2">
-                                    <label for="apt" class="second">Apartment/Suite Number:</label>
-                                    <input type="text" id="apt" name="customerApartment">
-                                </div>
-                                <div>
-                                    <label for="city">City:</label>
-                                    <input type="text" id="city" name="customerCity">
-                                    <label for="state" class="second">State:</label>
-                                    <select name="state" id="state">
-                                        <option value="AL">Alabama</option>
-                                        <option value="AK">Alaska</option>
-                                        <option value="AZ">Arizona</option>
-                                        <option value="AR">Arkansas</option>
-                                        <option value="CA">California</option>
-                                        <option value="CO">Colorado</option>
-                                        <option value="CT">Connecticut</option>
-                                        <option value="DE">Delaware</option>
-                                        <option value="DC">District of Columbia</option>
-                                        <option value="FL">Florida</option>
-                                        <option value="GA">Georgia</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="ID">Idaho</option>
-                                        <option value="IL">Illinois</option>
-                                        <option value="IN">Indiana</option>
-                                        <option value="IA">Iowa</option>
-                                        <option value="KS">Kansas</option>
-                                        <option value="KY">Kentucky</option>
-                                        <option value="LA">Louisiana</option>
-                                        <option value="ME">Maine</option>
-                                        <option value="MD">Maryland</option>
-                                        <option value="MA">Massachusetts</option>
-                                        <option value="MI">Michigan</option>
-                                        <option value="MN">Minnesota</option>
-                                        <option value="MS">Mississippi</option>
-                                        <option value="MO">Missouri</option>
-                                        <option value="MT">Montana</option>
-                                        <option value="NE">Nebraska</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="NH">New Hampshire</option>
-                                        <option value="NJ">New Jersey</option>
-                                        <option value="NM">New Mexico</option>
-                                        <option value="NY">New York</option>
-                                        <option value="NC">North Carolina</option>
-                                        <option value="ND">North Dakota</option>
-                                        <option value="OH">Ohio</option>
-                                        <option value="OK">Oklahoma</option>
-                                        <option value="OR">Oregon</option>
-                                        <option value="PA">Pennsylvania</option>
-                                        <option value="RI">Rhode Island</option>
-                                        <option value="SC">South Carolina</option>
-                                        <option value="SD">South Dakota</option>
-                                        <option value="TN">Tennessee</option>
-                                        <option value="TX">Texas</option>
-                                        <option value="UT">Utah</option>
-                                        <option value="VT">Vermont</option>
-                                        <option value="VA">Virginia</option>
-                                        <option value="WA">Washington</option>
-                                        <option value="WV">West Virginia</option>
-                                        <option value="WI">Wisconsin</option>
-                                        <option value="WY">Wyoming</option>
-                                    </select>
-                                    <label for="country" class="second">Country:</label>
-                                    <input type="text" id="country" name="customerCountry" placeholder="United States"
-                                        disabled>
-                                </div>
-                                <div>
-                                    <label for="comments">Special Delivery Instructions:</label>
-                                    <textarea rows="2" cols="110" id="comments" name="customerComments">
-                            </textarea>
-                                </div>
+                    <br class="clear" />
+                    <div id="shippingInformation">
+                        <h2>Customer information:</h2>
+                        <div class="address">
+                            <div>
+                                <label for="fname">First Name:</label>
+                                <input type="text" id="fname" name="customerFirstName">
+                                <label for="lname" class="second">Last Name:</label>
+                                <input type="text" id="lname" name="customerLastName">
+                            </div>
+                            <div>
+                                <label for="adr">Address First Line:</label>
+                                <input type="text" id="adr" name="customerAddress">
+                            </div>
+                            <div>
+                                <label for="adr2">Address Second Line:</label>
+                                <input type="text" id="adr2" name="customerAddress2">
+                                <label for="apt" class="second">Apartment/Suite Number:</label>
+                                <input type="text" id="apt" name="customerApartment">
+                            </div>
+                            <div>
+                                <label for="city">City:</label>
+                                <input type="text" id="city" name="customerCity">
+                                <label for="state" class="second">State:</label>
+                                <select name="state" id="state">
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                                <label for="country" class="second">Country:</label>
+                                <input type="text" id="country" name="customerCountry" placeholder="United States"
+                                    disabled>
+                            </div>
+                            <div>
+                                <label for="comments">Special Delivery Instructions:</label>
+                                <textarea rows="2" cols="110" id="comments" name="customerComments"></textarea>
                             </div>
                         </div>
                     </div>
