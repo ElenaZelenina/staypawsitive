@@ -42,6 +42,7 @@
                 <form action="ShippingServer.jsp" method="POST">
                     <input type="hidden" name="productId" id="productId" value="<%= session.getAttribute("productId")%>">
                     <input type="hidden" name="quantity" id="quantity" value="<%= session.getAttribute("quantity")%>">
+                    <input type="hidden" name="productName" id="productName" value="<%= session.getAttribute("productName")%>">
                     <input type="hidden" name="orderTotal" id="orderTotal" value="0" />
                     <input type="hidden" name="orderAmount" id="orderAmount" value="<%= session.getAttribute("price")%>" />
                     <input type="hidden" name="tax" id="tax" value="0" />
@@ -210,7 +211,7 @@
                             </div>
                             <div>
                                 <label for="ccnum">Card Number:</label>
-                                <input type="text" id="ccnum" name="cardnumber" 
+                                 <input type="text" id="ccnum" name="cardnumber" 
                                     pattern="[0-9]{16}" required title="The credit card number should be 16 digits long">
                             </div>
                             <div>
