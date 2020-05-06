@@ -26,11 +26,12 @@ function init() {
 }
 
 function setDonation(activeButton, amount) {
-    for (button of allButtons) {
+    for (let i = 0; i < allButtons.length; i++) {
+        const button = allButtons[i];
         if (button.id !== activeButton.id) {
             button.classList.remove('active');
         }
-    };
+    }
     activeButton.classList.add('active');
 
     setDonationAmount(amount);
@@ -38,7 +39,7 @@ function setDonation(activeButton, amount) {
 
 function setDonationAmount(value) {
     document.getElementById('donationAmount').value = value;
-    document.getElementById('selectedAmount').innerText = value;
+    //document.getElementById('selectedAmount').innerText = value;
 }
 
 window.onload = init;
